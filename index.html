@@ -1,136 +1,113 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>CANIJO - Productos de Calidad</title>
-<link rel="stylesheet" href="css/estilos.css">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CANIJO - Catálogo Destacado</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- HEADER -->
+<!-- HEADER MODERNO -->
 <header class="sticky-header">
-  <div class="container-header">
-    <img src="img/1.jpg" alt="Logo CANIJO" class="logo">
+    <div class="container-header">
+        <a href="index.html" class="logo"><img src="img/1.jpg" alt="Logo CANIJO"></a>
+        
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="cat/catalogo.pdf" target="_blank">Catálogo</a></li>
+                <li><a href="index.html#nosotros">Nosotros</a></li>
+                <li><a href="index.html#contacto">Contacto</a></li>
+            </ul>
+        </nav>
 
-    <!-- Botón hamburguesa -->
-    <div class="menu-btn" id="menu-btn">
-      <span></span>
-      <span></span>
-      <span></span>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
     </div>
-
-    <nav>
-      <ul>
-        <li><a href="#hero">Inicio</a></li>
-        <li><a href="#productos">Productos</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
-  </div>
 </header>
 
 <!-- HERO SLIDER -->
 <section id="hero" class="hero">
-  <div class="slider">
-    <div class="slide active">
-      <img src="img/2.jpg" alt="Producto destacado 1">
-      <div class="slide-text">
-        <div class="slide-overlay">
-          <h1>Producto Destacado 1</h1>
-          <p>Calidad y confianza en cada producto</p>
-          <a href="productos.html" class="btn-hero">Ver productos</a>
+    <div class="slider">
+        <div class="slide active">
+            <img src="img/1.jpg" alt="Producto destacado 1">
+            <div class="slide-text">
+                <div class="slide-overlay">
+                    <h1>Producto Destacado 1</h1>
+                    <p>Calidad y confianza en cada producto</p>
+                </div>
+            </div>
         </div>
-      </div>
-    </div>
-
-    <div class="slide">
-      <img src="img/3.jpg" alt="Producto destacado 2">
-      <div class="slide-text">
-        <div class="slide-overlay">
-          <h1>Producto Destacado 2</h1>
-          <p>Innovación y estilo para ti</p>
-          <a href="productos.html" class="btn-hero">Ver productos</a>
+        <div class="slide">
+            <img src="img/2.jpg" alt="Producto destacado 2">
+            <div class="slide-text">
+                <div class="slide-overlay">
+                    <h1>Producto Destacado 2</h1>
+                    <p>Innovación y estilo para ti</p>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
-
-  <div class="slider-controls">
-    <span class="prev">&#10094;</span>
-    <span class="next">&#10095;</span>
-  </div>
+    <div class="slider-controls">
+        <span class="prev">&#10094;</span>
+        <span class="next">&#10095;</span>
+    </div>
 </section>
 
-<!-- BANNERS PROMOCIONALES -->
-<section class="banners scroll-animation">
-  <div class="banner">
-    <h2>¡Oferta Especial!</h2>
-    <p>50% de descuento en productos seleccionados</p>
-    <a href="productos.html" class="btn-banner">Ver Productos</a>
-  </div>
-
-  <div class="banner">
-    <h2>Nuevos Lanzamientos</h2>
-    <p>Descubre nuestros últimos productos</p>
-    <a href="productos.html" class="btn-banner">Explorar</a>
-  </div>
-</section>
-
-<!-- PRODUCTOS DESTACADOS -->
+<!-- SECCIÓN CATÁLOGO -->
 <section id="productos" class="productos scroll-animation">
-  <h2>Productos más destacados</h2>
-  <div class="grid-productos">
-    <div class="producto">
-      <div class="ribbon">Nuevo</div>
-      <img src="img/4.jpg" alt="Producto 1">
-      <h3>Producto 1</h3>
-      <p>Descripción breve y atractiva del producto.</p>
+    <h2>Catálogo Destacado</h2>
+    <div class="grid-productos">
+        <div class="producto">
+            <span class="top-badge">TOP</span>
+            <img src="img/1.jpg" alt="Producto 1">
+            <h3>Producto 1</h3>
+            <p>Descripción breve y atractiva del producto.</p>
+        </div>
+        <div class="producto">
+            <span class="top-badge">TOP</span>
+            <img src="img/2.jpg" alt="Producto 2">
+            <h3>Producto 2</h3>
+            <p>Descripción breve y atractiva del producto.</p>
+        </div>
+        <div class="producto">
+            <span class="top-badge">TOP</span>
+            <img src="img/3.jpg" alt="Producto 3">
+            <h3>Producto 3</h3>
+            <p>Descripción breve y atractiva del producto.</p>
+        </div>
     </div>
-
-    <div class="producto">
-      <div class="ribbon">Top</div>
-      <img src="img/5.jpg" alt="Producto 2">
-      <h3>Producto 2</h3>
-      <p>Descripción breve y atractiva del producto.</p>
-    </div>
-
-    <div class="producto">
-      <div class="ribbon">Top</div>
-      <img src="img/6.jpg" alt="Producto 3">
-      <h3>Producto 3</h3>
-      <p>Descripción breve y atractiva del producto.</p>
-    </div>
-  </div>
 </section>
 
-<!-- NOSOTROS -->
+<!-- SECCIÓN SOBRE NOSOTROS -->
 <section id="nosotros" class="nosotros scroll-animation">
-  <h2>Sobre Nosotros</h2>
-  <div class="nosotros-container">
-    <img src="img/7.jpg" alt="Sobre nosotros">
+    <h2>Sobre Nosotros</h2>
     <p>Somos una empresa comprometida con ofrecer productos de calidad y un servicio excepcional a nuestros clientes.</p>
-  </div>
 </section>
 
 <!-- FOOTER -->
 <footer id="contacto" class="scroll-animation">
-  <div class="footer-container">
-    <h3>Contáctanos</h3>
-    <div class="redes">
-      <a class="whatsapp" href="https://wa.me/521XXXXXXXXXX" target="_blank"><i class="fab fa-whatsapp"></i></a>
-      <a class="facebook" href="https://facebook.com/tu_pagina" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a class="instagram" href="https://instagram.com/tu_pagina" target="_blank"><i class="fab fa-instagram"></i></a>
+    <div class="footer-container">
+        <h3>Contáctanos</h3>
+        <div class="redes">
+            <a class="whatsapp" href="https://wa.me/521XXXXXXXXXX" target="_blank">WhatsApp</a>
+            <a class="facebook" href="https://facebook.com/tu_pagina" target="_blank">Facebook</a>
+            <a class="instagram" href="https://instagram.com/tu_pagina" target="_blank">Instagram</a>
+        </div>
+        <p>&copy; 2025 CANIJO. Todos los derechos reservados.</p>
     </div>
-    <p>&copy; 2025 CANIJO. Todos los derechos reservados.</p>
-  </div>
 </footer>
 
-<!-- BOTÓN WHATSAPP -->
+<!-- BOTÓN FLOTA WHATSAPP -->
 <a href="https://wa.me/521XXXXXXXXXX" class="whatsapp-float" target="_blank">💬</a>
+
+<!-- BOTÓN TOP -->
+<button id="topBtn">↑</button>
 
 <script src="js/script.js"></script>
 </body>
